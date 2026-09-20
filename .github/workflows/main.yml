@@ -13,8 +13,8 @@ jobs:
 
       - name: Décompresser le projet NicoGPS2
         run: |
-          unzip -q NicoGPS3_WazeStyle_source.zip -d source
-          cp -r source/NicoGPS2/. .
+        unzip -q NicoGPS2_source.zip -d source
+          
 
       - name: Installer Java 17
         uses: actions/setup-java@v4
