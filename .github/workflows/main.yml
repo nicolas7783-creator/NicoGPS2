@@ -11,9 +11,10 @@ jobs:
       - name: Récupérer les fichiers
         uses: actions/checkout@v4
 
-      - name: Décompresser le projet NicoGPS2
-        run: |
-        unzip -q NicoGPS2_source.zip -d source
+      - nom : Décompresser le projet NicoGPS2
+  courir : |
+      unzip -q NicoGPS2_source.zip -d source
+      cp -r source/NicoGPS2/. .
           
 
       - name: Installer Java 17
